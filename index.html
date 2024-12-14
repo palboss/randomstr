@@ -28,7 +28,7 @@
     </style>
 </head>
 
-<body>
+<body onload="generate()">
     <nav class="navbar">
         <div style="display: -webkit-flex;display: flex;flex: 20%;align-items: center;font-size: 18px;padding-left: 15px;">
         </div>
@@ -54,7 +54,7 @@
                 <input id="quantity" type="number" value="5" min="1" max="200" step="1" style="color: Snow; background-color: DimGrey">
                 <input type="checkbox" id="uppercase" style="margin-left: 20px;" checked>
                 <label for="uppercase">大写字母</label>
-                <input type="checkbox" id="lowercase" style="margin-left: 20px;" checked>
+                <input type="checkbox" id="lowercase" style="margin-left: 20px;">
                 <label for="lowercase">小写字母</label>
                 <input type="checkbox" id="number" style="margin-left: 20px;" checked>
                 <label for="number">数字</label>
@@ -128,6 +128,7 @@
             console.log(str);
           }
         }
+        generate();
         function copy() {
           var element = document.getElementById("result");
           window.getSelection().selectAllChildren(element);
