@@ -50,9 +50,9 @@
       </div>
       <div style="margin-top: 30px;">
         <label for="length">长度：</label>
-        <input id="length" type="number" value="24" min="1" max="200" step="1">
+        <input id="length" type="number" value="16" min="1" max="200" step="1">
         <label for="quantity" style="margin-left: 20px;">数量：</label>
-        <input id="quantity" type="number" value="1" min="1" max="200" step="1">
+        <input id="quantity" type="number" value="5" min="1" max="200" step="1">
         <input type="checkbox" id="uppercase" style="margin-left: 20px;" checked>
         <label for="uppercase">大写字母</label>
         <input type="checkbox" id="lowercase" style="margin-left: 20px;" checked>
@@ -68,7 +68,7 @@
         <button type="button" class="btn-light" style="margin-right: 20px;" onclick="copy()">复制结果</button>
       </div>
       <div id="result" class="row"
-        style="margin-top: 20px;color: #101010; background-color: aliceblue;min-height: 60px;text-align: center;padding: 20px;">
+        style="margin-top: 20px;color: #778899; background-color: aliceblue;min-height: 60px;text-align: center;padding: 20px;">
       </div>
       <div style="margin-top: 30px;">
         <h3>小知识</h3>
@@ -110,10 +110,10 @@
         characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       }
       if (lowerInput.checked) {
-        characters += "abcdefghijklmnopqrstuvwxyz";
+        characters += "abcdefghijkmnpqrstuvwxyz";
       }
       if (numberInput.checked) {
-        characters += "0123456789";
+        characters += "012356789";
       }
       if (symbolInput.checked) {
         characters += "!@#$%^&-_=+()<>?`,;:'|\\";
