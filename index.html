@@ -108,13 +108,13 @@
             characters += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
           }
           if (lowerInput.checked) {
-            characters += "abcdefghijkmnpqrstuvwxyz";
+            characters += '!@#%^&*()_~`}{[]:;><,./-=';
           }
           if (numberInput.checked) {
             characters += "012356789";
           }
           if (symbolInput.checked) {
-            characters += "!@#$%^&-_=+()<>?`,;:'|\\";
+            characters += "!@#%^&-_=()<>?,;:";
           }
           resultDiv.innerHTML = "";
           for (let i = 0; i < quantity; i++) {
